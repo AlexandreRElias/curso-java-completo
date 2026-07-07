@@ -1,0 +1,10 @@
+.metadata/
+bin/
+*.class
+.settings/
+.project
+.classpath
+.idea/
+*.iml
+out/
+.vscode/
