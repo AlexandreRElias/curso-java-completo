@@ -10,7 +10,6 @@ public class Example1 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		
 		int n = sc.nextInt();
 		double[] vect = new double[n];
 		
