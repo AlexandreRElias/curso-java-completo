@@ -8,24 +8,22 @@ import util.CalculatorThree;
 public class ProgramThree {
 
 	public static void main(String[] args) {
-		
-				
-				Locale.setDefault(Locale.US);
-				Scanner sc = new Scanner(System.in);
-				
-				System.out.print("Enter radius:");
-				double radius = sc.nextDouble();
-				
-				double c = CalculatorThree.circumference(radius);
-				
-				double v = CalculatorThree.volume(radius);
-				
-				System.out.printf("Circumference: %.2f%n", c);
-				System.out.printf("Volume: %.2f%n", v);
-				System.out.printf("PI Value: %.2f%n", CalculatorThree.PI);
-				
-				
-				sc.close();
-			}
 
-		}
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Enter radius:");
+		double radius = sc.nextDouble();
+
+		double c = CalculatorThree.circumference(radius);
+
+		double v = CalculatorThree.volume(radius);
+
+		System.out.printf("Circumference: %.2f%n", c);
+		System.out.printf("Volume: %.2f%n", v);
+		System.out.printf("PI Value: %.2f%n", CalculatorThree.PI);
+
+		sc.close();
+	}
+
+}
