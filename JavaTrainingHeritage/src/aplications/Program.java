@@ -8,10 +8,6 @@ public class Program {
 		
 		BusinessAccount account = new BusinessAccount(); 
 		
-		account.getBalance();
-		
-		
-
+		account.getBalance();		
 	}
-
 }
