@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 import entities.Employee;
 
@@ -37,11 +36,9 @@ public class Register {
 			double salary = sc.nextDouble();
 			sc.nextLine();
 			
-			
-			
 			employee = new Employee(id, name, salary);
 			
-			listEmployee.add(i, employee);	
+			listEmployee.add(employee);	
 		}
 		
 		System.out.println();
@@ -49,23 +46,23 @@ public class Register {
 		int idIncreaseSalary = sc.nextInt();
 		sc.nextLine();
 		
-		Employee emp = listEmployee.stream().filter(x -> x.getId() == idIncreaseSalary).findFirst().orElse(null);
+		Integer pos = position(listEmployee, idIncreaseSalary);
 		
-		//Integer pos = position(listEmployee, idIncreaseSalary);
+		//Employee emp = listEmployee.stream().filter(x -> x.getId() == idIncreaseSalary).findFirst().orElse(null);
 		
-		//if (pos == null) {
-		if(emp == null) {	
+		
+		if(pos == null) {	
 			System.out.println("This id does not exist!");
 		}
 		else {
 			System.out.print("Enter the percentage: ");
 			double percentIncreaseSalary = sc.nextDouble();		
-			//listEmployee.get(pos).increaseSalary(percentIncreaseSalary);
+			listEmployee.get(pos).increaseSalary(percentIncreaseSalary);
 		}	
 		System.out.println();
 		System.out.println("List of employees:");
 		for(Employee employe : listEmployee) {
-			System.out.println(emp);
+			System.out.println(employe);
 		}
 		
 		sc.close();
