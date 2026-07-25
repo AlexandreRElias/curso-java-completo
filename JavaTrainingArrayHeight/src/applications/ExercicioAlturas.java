@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ExercicioAlturas {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 
 		Locale.setDefault(Locale.US);
 
@@ -16,7 +16,8 @@ public class ExercicioAlturas {
 		System.out.print("Quantas pessoas serão digitadas? Quantidade: ");
 
 		nPessoas = sc.nextInt();
-
+		
+		
 		String[] vectNomes = new String[nPessoas];
 		int[] vectIdades = new int[nPessoas];
 		double[] vectAlturas = new double[nPessoas];
