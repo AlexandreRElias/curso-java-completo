@@ -20,6 +20,11 @@ public class BusinessAccount extends Account{
 	}else {
 		System.out.println("Valor de limite insuficiente");
 		}
-
+	}
+	
+	@Override
+	public void withdraw(Double amount) {
+		super.withdraw(amount);
+		balance -= 2.0;
 	}
 }
