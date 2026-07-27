@@ -1,4 +1,4 @@
-package aplications;
+package application;
 
 import entities.BusinessAccount;
 
