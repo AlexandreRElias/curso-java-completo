@@ -41,7 +41,5 @@ public class Program {
 		System.out.println("product data: " + product);
 
 		sc.close();
-
 	}
-
 }
