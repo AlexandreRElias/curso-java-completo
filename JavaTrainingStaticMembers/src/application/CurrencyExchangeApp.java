@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import util.CurrencyConverter;
 
-public class ProgramFour {
+public class CurrencyExchangeApp {
 
 	public static void main(String[] args) {
 

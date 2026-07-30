@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ProgramOne {
+public class LocalMethodsCalculatorApp {
 
 	public static final double PI = 3.14159;
 
