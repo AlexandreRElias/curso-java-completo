@@ -1,6 +1,6 @@
 package util;
 
-public class CalculatorThree {
+public class StaticCalculator {
 
 	public static final double PI = 3.14159;
 

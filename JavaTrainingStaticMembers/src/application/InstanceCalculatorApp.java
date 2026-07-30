@@ -3,12 +3,12 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import util.CalculatorTwo;
+import util.InstanceCalculator;
 
 public class InstanceCalculatorApp {
 
 	public static void main(String[] args) {
-		CalculatorTwo calculator = new CalculatorTwo();
+		InstanceCalculator calculator = new InstanceCalculator();
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);

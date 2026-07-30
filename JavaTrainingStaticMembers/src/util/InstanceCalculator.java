@@ -1,6 +1,6 @@
 package util;
 
-public class CalculatorTwo {
+public class InstanceCalculator {
 
 	public final double PI = 3.14159;
 
